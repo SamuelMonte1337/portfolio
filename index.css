@@ -1,8 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@500&display=swap');
+
+
+
 body {
+    display: flex; 
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
     background-color: #0D1117;
 }
 
 .navbar-nav > li{
     padding-left:30px;
     padding-right:30px;
+  }
+
+
+.minhaImg {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+}  
+
+.animated-content {
+    transition: opacity 1s ease-in-out;
+}
+
+.centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center 
+}
+
+#nome {
+    position: absolute;
+    top: 400px;
+    margin: 0;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 52px;
+    color: aliceblue;
+
+}
+
+
+#alias {
+    position: absolute;
+    top: 450px;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 42px;
+    color: aliceblue;
+    
+}
+
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+   
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+
+#meu-elemento {
+    margin-top: 50vh;
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 50px;
+    color: aliceblue;
+    transition: opacity 1s ease-in-out;
+  }
+
+
+.tela2 {
+    height: 300vh;
+}
+
+
+.elemento-animado {
+    background-color: gray;
+    transition: background-color 1s linear;
   }
