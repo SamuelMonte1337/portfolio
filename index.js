@@ -1,5 +1,11 @@
-window.addEventListener("scroll", function() {
-  var scroll = document.documentElement.scrollTop;
-  var element = document.querySelector(".elemento-animado");
-  element.style.backgroundColor = "rgba(0,0,0," + scroll/1000 + ")";
+window.addEventListener('scroll', function() {
+  let images = document.querySelectorAll('.fadeImage');
+  for (let i = 0; i < images.length; i++) {
+    let image = images[i];
+    let imagePosition = image.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight / 1.3;
+    if (imagePosition < screenPosition) {
+      image.style.opacity = 1;
+    }
+  }
 });
