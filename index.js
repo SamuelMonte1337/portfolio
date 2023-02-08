@@ -9,3 +9,10 @@ window.addEventListener('scroll', function() {
     }
   }
 });
+
+window.onscroll = function() {
+  var scroll = window.pageYOffset;
+  var elementHeight = document.querySelector(".elementoFade").offsetHeight;
+  
+  document.querySelector(".element").style.opacity = 1 - (scroll / elementHeight);
+}
