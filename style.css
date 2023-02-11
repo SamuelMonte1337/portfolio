@@ -4,7 +4,7 @@
 html {
     position: relative;
     height: 35in;
-    
+    scroll-behavior: smooth;
 }
 
 
@@ -172,7 +172,7 @@ body {
     position: absolute;
     left: 0; 
     right: 0; 
-    top: 50%;
+    top: 30%;
     width: fit-content;
     border-radius: 30px;
     margin-left: auto; 
@@ -215,6 +215,6 @@ body {
     text-align: center;
     font-family: 'Sofia Sans', sans-serif;
     font-size: 1.5rem;
+    color: aliceblue;
 
 }
-
